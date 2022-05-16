@@ -4,13 +4,12 @@
 
 
 int main (void) {
-	printf("0\n");
 	Product plist[50];
     Custom clist[50]={0};
 	int index = 0;
 	int count =0, menu;
     int count2 =0, index2=0;//이용한 손님 수를 체크하는 변수
-	int mode;//점장이 이용하는지 손님이 이용하는지 구분
+	int mode;//mode를 선택하도록 한다.
 	int password=1111,inputPassword;//password 초기값과 입력값
 	count = loadData(plist);
     count2 = loadData2(clist);
@@ -129,7 +128,7 @@ if(mode==2){
                printReceipt(clist,plist,index2);
             }
             else if (menu == 5){
-                printf("고객님 번호는 %d번 입니다.\n", index2+1);
+                printf("고객님 번호는 %d번 입니다.\n", index2);
             }
             
             }
